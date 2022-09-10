@@ -1,5 +1,5 @@
+#reto3
 from random import randint
-
 dado1=randint(1,6)
 dado2=randint(1,6)
 total=dado1+dado2

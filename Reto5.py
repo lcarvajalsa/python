@@ -1,11 +1,6 @@
-#En Supermercados Noé estamos de aniversario y 
-# te obsequiamos un descuento en el valor de tu compra, 
-# si ésta es mayor a 50.000 y dependiendo de tu suerte:
-#Si sacas la bolita roja obtienes 10% en el valor de tu compra
+#reto5
 from random import randint, random
-
 bolita=randint(1,4)
-
 print("Bienvenido a supermercados Noé\n")
 total=int(input("Ingrese el valor a pagar \n"))
 if total>=50000:

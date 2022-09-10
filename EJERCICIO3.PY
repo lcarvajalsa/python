@@ -1,3 +1,4 @@
+#ejercicio3
 edad=int(input("Ingresa tu edad en años \n"))
 if 0<=edad<=4:
     print(f"El cliente ingresa gratis")

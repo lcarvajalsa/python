@@ -1,7 +1,6 @@
+#reto1
 from random import randint, random
-
 moneda=randint(1,2)
-
 eleccion=int(input( "Digite 1 para cara y 2 para cello \n"))
 if moneda==1 and eleccion==1:
     print(" Salio cara, usted eliguio cara Ganaste....")

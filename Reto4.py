@@ -1,3 +1,4 @@
+#reto4
 from random import randint, random
 print("Bueno vamos a jugar")
 jugar=randint(1,3)

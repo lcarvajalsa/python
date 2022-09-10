@@ -1,11 +1,9 @@
+#reto2
 from random import randint
-
-
 Dado1=randint(1,6)
 Dado2=randint(1,6)
 total=Dado1+Dado2
 print(f"el dado rojo cayo {Dado1} y dado blanco cayo {Dado2}")
-
 if Dado1==1 and Dado2==1:
     print("si salio pares de unos, ganaste")
 elif Dado1==1 and Dado2==2 or Dado1==2 and Dado2==1:

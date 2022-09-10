@@ -1,3 +1,4 @@
+#ejercicio6
 print("piensa un numero")
 print("suna 5")
 print("multiplica 3")

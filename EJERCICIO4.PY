@@ -1,3 +1,4 @@
+#ejercicio4
 leche=input("¿Trajo la leche? \n Digite s o n \n")
 pan=input("¿Trajo el pan? \n Digite s o n \n")
 huevos=input("¿Trajo los huevos? \n Digite s o n \n")

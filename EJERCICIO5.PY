@@ -1,3 +1,4 @@
+#Ejercicio 5
 print(" Piensa un número")
 print(" Sumale 5")
 print(" Multiplique 3")
