@@ -8,4 +8,4 @@ while repetir=="S" or repetir=="s":
     else:
         print("Rompe la alcancia")
         break
-print=input(f"El total ahorrado es {alcancia}")
+print (f"El total ahorrado es {alcancia}")

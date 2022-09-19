@@ -1,7 +1,6 @@
-#hacer un programa de algo cotidiano
-from re import S
+"hacer un programa de algo cotidiano"
 print("si tu cuenta de correo es MISENA marca 1 o 2 si es personal")
-num1=int(input("Ingrese el primer número\n "))
+num1=int(input("Ingrese valor\n "))
 while num1==2:
     rta1=input("¿Registrarse en el sena? S para si, N para no \n" )
     if rta1=="S" or rta1=="s":
