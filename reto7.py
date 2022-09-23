@@ -4,6 +4,7 @@ apostar=1000
 valor=0
 repetir=int(input("Digite las veses que decea jugas\n"))
 valor=int(input("Digite cuanto vas a apostar\n"))
+seguir=input
 for i in range(1,repetir,1):
     while repetir==repetir or repetir==repetir:
         if valor>0:
@@ -33,7 +34,8 @@ for i in range(1,repetir,1):
     apostar=apostar-valor
     print(f"El total del gasto es {apostar}")
     print(f"tienes un saldo de {total}")
-    repetir=input("Desea ingresar más dinero S o N para salir \n")
+
+
 
 
         
