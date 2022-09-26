@@ -1,41 +1,65 @@
-from random import randint, random
-total=0
-apostar=1000
-valor=0
-repetir=int(input("Digite las veses que decea jugas\n"))
-valor=int(input("Digite cuanto vas a apostar\n"))
-seguir=input
-for i in range(1,repetir,1):
-    while repetir==repetir or repetir==repetir:
-        if valor>0:
-            moneda=randint(1,2)
-            eleccion=int(input( "Digite 1 para cara y 2 para cello \n"))
-            if moneda==1 and eleccion==1:
-                print(" Salio cara, usted eliguio cara Ganaste....")
-            elif moneda==1 and eleccion==2:
-                print(" Salio cara, usted eliguio sello Perdiste....")
-            elif moneda==2 and eleccion==2:
-                print(" Salio sello, usted eliguio sello Ganaste....")
-            elif moneda==2 and eleccion==1:
-                print(" Salio sello, usted eliguio cara perdiste....")
-            elif eleccion!=1 or eleccion!=2:
-                print("Digitaste una opcion incorrecta")
-            else:
-                print("sigue intentando")
-            if apostar<1000:
-                repetir=input("Desea ingresar más dinero S o N para salir \n")
-            else:
-                print("excediste el gasto\n")  
-                break
-        else:
-            print("excediste el gasto\n")    
-            break  
-    total=total+valor
-    apostar=apostar-valor
-    print(f"El total del gasto es {apostar}")
-    print(f"tienes un saldo de {total}")
+from random import randint
+saldo=0
+repeat="SI"
+repetir="si"
+juego=0
 
-
-
-
+while repeat=="si" or repeat=="SI":
+    plata=int(input("ingrese el saldo que desea recargar \n "))
+    saldo=saldo+plata
+    print("su saldo global es de ",saldo)
+    if saldo>=0:
+        repeat=input(f"si desea ingresar mas dinero escriba si de lo contrario escriba no \n")
+    else:
+        break
+apuesta=int(input("ingrese el valor que desea apostar \n"))
+while repetir=="si" or repetir=="SI":
+    moneda=randint(1,2)
+    eleccion=int(input("digite 1 para escoger cara y 2 para escoger sello \n"))
+    if moneda==1 and eleccion==1:
+        saldo=saldo+apuesta
+        juego=juego+1
+        print("salio cara, usted escogio cara ganaste!! , debes duplicar tu apuesta\n")
         
+        
+    elif moneda==1 and eleccion==2:
+        saldo=saldo-apuesta
+        juego=juego+1
+        print("salio cara, usted escogio sello perdiste!!\n")
+        if saldo>0:
+            print("puede seguir jugando\n")
+        elif saldo<0:
+            print("saldos insuficientesn\n")
+        else:
+            break
+        
+    elif moneda==2 and eleccion==2:
+        saldo=saldo+apuesta
+        juego=juego+1
+        print("salio sello, usted escogio sello ganaste!! , debes duplicar tu apuesta\n")
+        
+    elif moneda==2 and eleccion==1:
+        saldo=saldo-apuesta
+        juego=juego+1
+        print("salio sello, usted escogio cara perdiste!!\n")
+        if saldo>0:
+            print("puede seguir jugando\n")
+        elif saldo<0:
+            print("saldos insuficientes\n")
+        else:
+            break
+      
+
+    elif eleccion!=1 or eleccion!=2:
+        print("digitaste una opcion incorrecta\n")
+    else:
+        print("datos incorrectos\n")
+    print(f" su saldo actual es ",saldo,"\n")
+    repetir=input(f"quiere jugar de nuevo escriba si o de lo contario esbriba no \n")
+    if repetir=="si" or repetir=="SI":
+        apuesta=int(input("ingrese el valor que desea apostar \n"))
+    else:
+        break
+
+print("el numero de veces que usted jugo fue",juego,"el dinero acumulado fue",saldo,"\n")
+

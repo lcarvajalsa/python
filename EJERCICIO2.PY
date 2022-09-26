@@ -1,4 +1,3 @@
-#elercicio 2
 num=int(input("Ingrese el primer número \n"))
 if num>0:
     print(f"el numero {num} es mayor")

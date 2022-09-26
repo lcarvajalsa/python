@@ -8,3 +8,4 @@ elif 19>=edad<=60:
     print(f"su edad es {edad} años y debe pagar 15000")
 else:
     print(f"su edad es {edad} años debe pagar 0")
+    
