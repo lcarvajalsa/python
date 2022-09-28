@@ -62,4 +62,3 @@ while repetir=="si" or repetir=="SI":
         break
 
 print("el numero de veces que usted jugo fue",juego,"el dinero acumulado fue",saldo,"\n")
-

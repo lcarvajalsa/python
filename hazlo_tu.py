@@ -1,11 +1,6 @@
 "En la materia de programacion con python tenemos 4 talleres a desarrollar y"
 "queremos determinar si su aprendiz aprobó o reprobo la materia:"
 "Solicita la nota optenida en cada uno de los 4 talleres calificacion de 1.0 a 5.0."
-""
-""
-""
-""
-""
 num1=float(input("Ingrese primer taller\n "))
 num2=float(input("Ingrese segundo taller\n "))
 num3=float(input("Ingrese tercer taller\n "))

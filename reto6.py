@@ -1,37 +1,40 @@
 from random import randint
-election=int(input("oprima 1 para ingresar el valor de su factura o oprima 2 para ingresar la cantidad de productos comprados \n"))
+election=int(input("Digita 1 para el valor de su factura o 2 para la cantidad de productos \n"))
 if election==1:
-    compra=int(input("ingrese el valor de su compra \n"))
+    compra=int(input("Ingrese el valor de su compra \n"))
 else:
-    numproductos=int(input("ingrese el numero de productos a comprar "))
+    numproductos=int(input("Ingrese el numero de productos a comprar\n "))
     valorproducto=10000
-    compra=numproductos*valorproducto
+    compra=numproductos*valorproducto  
 descuento=randint(1,4)
+total=compra
 if compra>50000:
-    print("salio escogido/a para participar en nuestra promocion de aniversario")
+    print("Salio seleccionado para participar en nuestra promocion de aniversario\n")
     if descuento==1:
         procedimiento=compra*0.10
         total=compra-procedimiento
-        print("salio bolita roja, su descuento es del 10% en el valor de su factura, su total a pagar es",total)
+        print("Salio bolita roja, su descuento es del 10% en el valor de su factura, su total a pagar es",total,"\n")
     elif descuento==2:
         procedimiento=compra*0.30
         total=compra-procedimiento
-        print("salio bolita azul, su descuento es de 30% en el valor de su factura,su total a pagar es",total)
+        print("Salio bolita azul, su descuento es de 30% en el valor de su factura,su total a pagar es",total, "\n")
     elif descuento==3:
         procedimiento=compra*0.50
         total=compra-procedimiento
-        print("salio bolita amarilla, su descuento es de 50% en el valor de su factura,su total a pagar es ",total)
+        print("Salio bolita amarilla, su descuento es de 50% en el valor de su factura,su total a pagar es ",total,"\n")
     elif descuento==4:
-        print("salio bolita blanca, te llevas tu compra gratis")
+        print("Salio bolita blanca, te llevas tu compra gratis\n")
     else:
-        print(f"el juego escogio{descuento}")
+        print(f"El juego escogio{descuento}")
 else:
-    print("no fue escogido/a para participar en nuestra promocion, su total a pagar es ",compra)
+    print("Su total a pagar es ",compra,"\n")
+    valorrecibido1=int(input("Igrese el valor con el que desea cancelar\n "))
+    cambio=valorrecibido1-compra
+    print ("Su compra fue de ",compra," productos me realizo el pago con ",valorrecibido1," su cambio es ",cambio,"\n")
 if descuento==1 or descuento==2 or descuento==3:
-    valorrecibido=int(input("igrese el valor con el que desea cancelar "))
+    valorrecibido=int(input("igrese el valor con el que desea cancelar\n "))
     cambio=valorrecibido-total
-    print ("su compra fue de ",total," productos me realizo el pago con ",valorrecibido," su cambio es ",cambio)
+    print ("Su compra fue de ",total," productos me realizo el pago con ",valorrecibido," su cambio es ",cambio,"\n")
 else: 
     descuento==4
-    print("ganaste")
-
+    print("----Gracias por su compra----")
